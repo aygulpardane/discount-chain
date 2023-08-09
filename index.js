@@ -31,7 +31,7 @@ function totalCost (pricePerRefill, refills) {
     return pricePerRefill * refills;
 }
 
-const cost = totalCost (pricePerRefill, refills);
+//const cost = totalCost (pricePerRefill, refills);
 
 function costSubscription (cost, subscription, coupon) {
     if (subscription && coupon) {
@@ -45,6 +45,8 @@ function costSubscription (cost, subscription, coupon) {
     }
 }
 
-console.log(costSubscription (cost, subscription, coupon));
+console.log("Your grand total is $" + costSubscription (totalCost (25, 3), timmy.subscription, timmy.coupon));
 
+console.log("Your grand total is $" + costSubscription (totalCost (50, 1), sarah.subscription, sarah.coupon));
 
+console.log("Your grand total is $" + costSubscription (totalCost (30, 5), rocky.subscription, rocky.coupon));
